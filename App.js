@@ -27,7 +27,7 @@ function App() {
 
         // Türkiye verileri, API yanıtındaki ülke verileri arasında aranarak bulunur
         const turkeyData = response.data.result.find(
-          (country) => country.country === "Spain"
+          (country) => country.country === "Turkey"
         );
 
         // Türkiye istatistik verileri state'e atanır
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>İspanya COVID-19 İstatistikleri</h1>
+      <h1>Türkiye COVID-19 İstatistikleri</h1>
       {turkeyStats ? (
         <ul>
           <li>Toplam Vaka: {turkeyStats.totalCases}</li>
